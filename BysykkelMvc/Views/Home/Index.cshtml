@@ -1,0 +1,37 @@
+﻿@model BysykkelData.Models.BikeServiceInfo
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="info-box">
+    @Model.Name av @Model.ServiceOperator - Sist oppdaterte data: @Model.LastUpdated UTC
+</div>
+
+<form method="get">
+    Søk i stasjoner:
+    <input id="search" name="id" type="text" size="20" />
+</form>
+
+<p>Klikk på stasjonsnavnet for å åpne kart i en ny nettleserfane.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Ledige sykler</th>
+            <th>Ledige plasser</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var station in Model.BikeStations)
+        {
+        <tr>
+            <td>
+                <a href="@station.MapLink" target="_blank">@station.StationName</a>
+            </td>
+            <td>@station.AvailableBikes</td>
+            <td>@station.AvailableDocks</td>
+        </tr>
+        }
+    </tbody>
+</table>

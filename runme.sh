@@ -1,0 +1,2 @@
+cd BysykkelMvc
+dotnet run
