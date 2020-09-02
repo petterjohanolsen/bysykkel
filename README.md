@@ -13,7 +13,7 @@ Project is created with:
 * .NET Core v3.1
 	
 ## Configuration
-The following settings may be changed in appsettings.json:
+The following settings may be changed in BysykkelMvc/appsettings.json:
 - baseUrl
 - clientIdentifier
 
