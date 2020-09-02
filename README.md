@@ -21,8 +21,8 @@ The following settings may be changed in BysykkelMvc/appsettings.json:
 To run this project, download and install .NET Core SDK for your operating system from https://dotnet.microsoft.com/download, then run the following commands:
 
 ```
-$ git clone 
-$ cd BysykkelMvc
+$ git clone https://github.com/petterjohanolsen/bysykkel.git
+$ cd bysykkel/BysykkelMvc
 $ dotnet run
 ```
 
